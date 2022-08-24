@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+/* Header section */
+header {
+  border-bottom: 1px solid #212529;
+}
+.header-section h1 {
+  text-align: center;
+  margin: 10px;
+  font-size: 36px;
+  font-weight: 600;
+}
+.shortcut-btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+.shortcut-btns .shortcut-btn {
+  margin: 5px;
+  padding: 3px 7px;
+  border: 2px solid transparent;
+  border-radius: 3px;
+  background-color: #efefef;
+  cursor: pointer;
+}
+.shortcut-btn:hover {
+  border-color: #17a3b844;
+}
+.search-bar {
+  margin: 5px 0 20px;
+}
+.search_form {
+  width: 100%;
+  height: 50px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+.search_form input {
+  margin: 0 5px;
+  padding: 4px 7px;
+  width: 25%;
+}
+.search_form button {
+  margin: 0 5px;
+  padding: 4px 10px;
+  border: none;
+  border-radius: 3px;
+  color: #ffffff;
+  font-size: 16px;
+}
+#submitBtn {
+  background-color: #28a745;
+}
+#submitBtn:hover,
+#submitBtn:active {
+  background-color: #218838;
+  box-shadow: 0 0 1px 3px #4ba8618e;
+}
+#trendingBtn {
+  background-color: #dc3545;
+}
+#trendingBtn:hover {
+  background-color: #c82333;
+  box-shadow: 0 0 1px 3px #da3e4e8a;
+}
