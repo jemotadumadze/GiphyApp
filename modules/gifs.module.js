@@ -10,14 +10,14 @@ export class gifItems extends Base {
     return list
       .map((obj) => {
         return `
-         <div class="gif-item">
-            <div class="gif">
-            <img src="" alt="" >
-            </div>
-            <div class="gif-rating">
-              <span>Rating:</span>
-            </div>
+     <div class="gif-item">
+        <div class="gif">
+        <img src="${obj.images.original.url}" alt="${obj.title}" >
         </div>
+        <div class="gif-rating">
+          <h6>Rating: ${obj.rating}</h6>
+        </div>
+    </div>
         `
       })
       .join('')
@@ -25,6 +25,6 @@ export class gifItems extends Base {
 
   render() {
     const content = this._renderGifsList(this.data)
-    this.setHtmlContent(content)
+    this.setContent(content)
   }
 }
