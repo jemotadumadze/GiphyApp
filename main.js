@@ -26,7 +26,6 @@ submitBtn.addEventListener('click', (e) => {
   const searchedValue = document.getElementById('searchedValue')
   let existsBtn = false
   if (searchedValue.value !== '') {
-    // Adding only new values to shortcutBtnsData array
     for (let shortcutBtnValue of shortcutBtnsData) {
       if (shortcutBtnValue === searchedValue.value) {
         existsBtn = true
@@ -45,7 +44,7 @@ submitBtn.addEventListener('click', (e) => {
       `${queryURL}search?q=${searchedValue.value}&limit=${params.limit}&api_key=${params.api_key}&fmt=${params.fmt}`,
     )
     mainShortcutBtnsBlock.render()
-    activatingShortcutBtns()
+
   }
 })
 
