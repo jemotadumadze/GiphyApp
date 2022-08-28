@@ -5,7 +5,6 @@ export class Base {
     this.id = id
     this.data = data
   }
-
   setContent(content) {
     this.id.innerHTML = content
   }
