@@ -24,14 +24,14 @@ mainShortcutBtnsBlock.render()
 
 const activatingShortcutBtns = () => {
   for (let shortcutBtn of shortcutBtns[0].children) {
-    shortcutBtn.addEventListener('click', () => {
+    shortcutBtn.addEventListener('click', (e) => {
       fetchingGifsFromAPI(
-        idOfGifItemsContainer,
+        gifItemsConainer,
         `${queryURL}search?q=${shortcutBtn.textContent}&limit=${params.limit}&api_key=${params.api_key}&fmt=${params.fmt}`,
-      )
-    })
+      );
+    });
   }
-}
+};
 activatingShortcutBtns()
 
 // Submit btn
